@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Food App</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #111827, #1e293b);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    margin: 20px auto;
+    background: #22c55e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+h1 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.description {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.download {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 16px 35px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+}
+
+.download:hover {
+    background: #16a34a;
+}
+
+.card {
+    margin-top: 35px;
+    padding: 25px;
+    background: rgba(255,255,255,.08);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.1);
+}
+
+.qr {
+    width: 200px;
+    max-width: 80%;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        🍔
+    </div>
+
+    <h1>Food App</h1>
+
+    <p class="description">
+        Food App ကို အလွယ်တကူ Download လုပ်ပြီး
+        အသုံးပြုနိုင်ပါတယ်။
+    </p>
+
+    <!-- DOWNLOAD BUTTON -->
+    <a class="download"
+       href="https://github.com/kok328002-oss/my/releases/download/v1.0/food.apk">
+       📥 Download App
+    </a>
+
+    <div class="card">
+
+        <h2>📱 APK Download</h2>
+
+        <p>
+            အောက်က QR Code ကို Scan လုပ်ပြီး
+            App ကို Download လုပ်နိုင်ပါတယ်။
+        </p>
+
+        <!-- QR CODE -->
+        <img class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fgithub.com%2Fkok328002-oss%2Fmy%2Freleases%2Fdownload%2Fv1.0%2Ffood.apk"
+        alt="Download QR Code">
+
+    </div>
+
+    <footer>
+        © 2026 Food App
+    </footer>
+
+</div>
+
+</body>
+</html>
